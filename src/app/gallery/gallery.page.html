@@ -1,0 +1,32 @@
+<br>
+<br>
+<br>
+<br>
+
+<ion-content>
+  
+    <ion-text color="success">
+
+      <h1 class="ion-text-center ion-text-uppercase"><b>gallery</b></h1>
+
+    </ion-text>
+
+  <ion-row>
+    
+    <ion-item *ngFor="let object of objects" lines="none">
+      
+      <ion-card class="success">
+        <ion-card-header>
+          <img src="{{ object.image }}" alt="location">
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{ object.content }}
+        </ion-card-content>
+      </ion-card>
+
+    </ion-item>
+
+  </ion-row>
+
+</ion-content>
